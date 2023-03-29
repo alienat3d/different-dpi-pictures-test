@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pictures</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="image-box">
+    <h1 class="image-box__title">Image Sets</h1>
+    <div class="image-box__image">
+      <picture>
+        <source type="image/avif"
+          srcset="
+            img/avif/kitten-lying-on-the-green-sofa@1x.avif 1x, 
+            img/avif/kitten-lying-on-the-green-sofa@2x.avif 2x, 
+            img/avif/kitten-lying-on-the-green-sofa@3x.avif 3x, 
+            img/avif/kitten-lying-on-the-green-sofa@4x.avif 4x" />
+        <source type="image/webp"
+          srcset="
+            img/webp/kitten-lying-on-the-green-sofa@1x.webp 1x, 
+            img/webp/kitten-lying-on-the-green-sofa@2x.webp 2x, 
+            img/webp/kitten-lying-on-the-green-sofa@3x.webp 3x, 
+            img/webp/kitten-lying-on-the-green-sofa@4x.webp 4x" />
+        <img width="600" height="400" 
+          srcset="
+            img/kitten-lying-on-the-green-sofa@2x.jpg 2x, 
+            img/kitten-lying-on-the-green-sofa@3x.jpg 3x, 
+            img/kitten-lying-on-the-green-sofa@4x.jpg 4x"
+          src="img/kitten-lying-on-the-green-sofa@1x.jpg 1x"
+          alt="Kitten lying on the green sofa" />
+      </picture>
+    </div>
+    <div class="image-box__image">
+      <picture>
+        <source type="image/avif"
+          srcset="
+            img/avif/just-before-sunrise@1x.avif 1x, 
+            img/avif/just-before-sunrise@2x.avif 2x, 
+            img/avif/just-before-sunrise@3x.avif 3x, 
+            img/avif/just-before-sunrise@4x.avif 4x" />
+        <source type="image/webp"
+          srcset="
+            img/webp/just-before-sunrise@1x.webp 1x, 
+            img/webp/just-before-sunrise@2x.webp 2x, 
+            img/webp/just-before-sunrise@3x.webp 3x, 
+            img/webp/just-before-sunrise@4x.webp 4x" />
+        <img width="400" height="600" 
+          srcset="
+            img/just-before-sunrise@2x.jpg 2x, 
+            img/just-before-sunrise@3x.jpg 3x, 
+            img/just-before-sunrise@4x.jpg 4x" 
+          src="img/just-before-sunrise@1x.jpg 1x" 
+          alt="Just before sunrise" />
+      </picture>
+    </div>
+  </div>
+</body>
+
+</html>
